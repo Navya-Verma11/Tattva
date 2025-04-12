@@ -1,0 +1,186 @@
+/* src/styles/HealthFunds.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .section {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    color: #2b6cb0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputGroup input:focus,
+  .inputGroup textarea:focus {
+    border-color: #38b2ac;
+    outline: none;
+  }
+  
+  .submitButton {
+    background: #38b2ac;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background: #319795;
+  }
+  
+  .successMessage {
+    background: #f0fdfa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #065f46;
+    border: 2px solid #34d399;
+  }
+  
+  .ngoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .ngoCard {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .ngoCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .ngoLogo {
+    font-size: 2rem;
+    color: #38b2ac;
+  }
+  
+  .ngoInfo h4 {
+    margin: 0 0 0.5rem;
+    color: #2d3748;
+  }
+  
+  .externalIcon {
+    margin-left: auto;
+    color: #718096;
+  }
+  
+  .stepsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .stepCard {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    position: relative;
+    border-left: 4px solid #38b2ac;
+  }
+  
+  .stepNumber {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: #38b2ac;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  
+  .scamAlert {
+    background: #fff5f5;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    border: 2px solid #fc8181;
+  }
+  
+  .alertIcon {
+    color: #f56565;
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+  
+  .scamAlert ul {
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+  }
+  
+  .scamAlert li {
+    margin-bottom: 0.5rem;
+  }

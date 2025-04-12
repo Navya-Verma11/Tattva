@@ -1,0 +1,146 @@
+/* src/styles/SymptomsAwareness.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    color: #2b6cb0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardHeader {
+    background: #ebf8ff;
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .cardIcon {
+    font-size: 2.5rem;
+    color: #4299e1;
+    margin-bottom: 1rem;
+  }
+  
+  .warningTag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f56565;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .cardBody {
+    padding: 1.5rem;
+  }
+  
+  .caseButton {
+    background: #4299e1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .caseButton:hover {
+    background: #3182ce;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 500px;
+    position: relative;
+    animation: modalEnter 0.3s ease;
+  }
+  
+  @keyframes modalEnter {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #718096;
+  }
+  
+  .consequenceBox {
+    background: #fff5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 0.8rem;
+    color: #c53030;
+  }
+  
+  .consultBox {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 2px solid #bee3f8;
+  }
+  
+  .doctorIcon {
+    font-size: 2rem;
+    color: #4299e1;
+  }

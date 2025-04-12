@@ -1,0 +1,74 @@
+/* src/styles/SymptomChecker.module.css */
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .inputSection {
+    margin: 2rem 0;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #38b2ac;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkButton {
+    background: #38b2ac;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .results {
+    margin-top: 2rem;
+    background: #f0fdfa;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .resourceList {
+    margin-top: 1.5rem;
+  }
+  
+  .resourceCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .disclaimer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff3cd;
+    border-radius: 5px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .emergencyButton {
+    display: inline-block;
+    background: #dc3545;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
