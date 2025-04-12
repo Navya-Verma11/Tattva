@@ -1,0 +1,142 @@
+/* src/styles/Telemedicine.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .flowSteps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: #718096;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .step.active {
+    color: #38b2ac;
+    border-color: #38b2ac;
+  }
+  
+  .doctorGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .doctorCard {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .doctorCard.selected {
+    border-color: #38b2ac;
+    box-shadow: 0 4px 6px rgba(56, 178, 172, 0.1);
+  }
+  
+  .doctorHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .doctorIcon {
+    font-size: 2rem;
+    color: #38b2ac;
+  }
+  
+  .fee {
+    margin-left: auto;
+    background: #f0fdfa;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  .languages {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .languages span {
+    background: #e2e8f0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .timeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .timeSlot {
+    background: white;
+    border: 2px solid #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .timeSlot.selected {
+    border-color: #38b2ac;
+    background: #f0fdfa;
+  }
+  
+  .problemDescription textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    margin: 2rem 0;
+    min-height: 200px;
+  }
+  
+  .navigationButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .consultationInterface {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+  }
+  
+  .doctorProfile {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .videoSection {
+    background: #f8fafc;
+    border-radius: 15px;
+    padding: 2rem;
+  }
+  
+  .systemMessage {
+    background: #ebf8ff;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }

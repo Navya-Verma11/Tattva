@@ -31,6 +31,12 @@ export default function Navbar() {
         <Link to="/funding" className={styles.link}>
   <Icon icon="mdi:hand-heart" /> Funding
 </Link>
+<Link to="/grievance" className={styles.link}>
+  <Icon icon="mdi:account-voice" /> Grievance
+</Link>
+<Link to="/telemedicine" className={styles.link}>
+  <Icon icon="mdi:video" /> Telemedicine
+</Link>
       </div>
 
      

@@ -8,7 +8,9 @@ import SymptomsAwareness from './components/SymptomsAwareness';
 import Homepage from './components/Homepage';
 import HealthLiteracy from './components/HealthLiteracy';
 import CostEstimator from './components/CostEstimator';
-import HealthFunds from './components/HealthFunds'; // <-- New Import
+import HealthFunds from './components/HealthFunds';
+import RaiseYourVoice from './components/RaiseYourVoice';
+import Telemedicine from './components/Telemedicine'; // Add the import for Telemedicine
 
 import styles from './styles/App.module.css';
 
@@ -86,7 +88,6 @@ function App() {
                     </motion.div>
                   }
                 />
-                {/* New Route for HealthFunds */}
                 <Route
                   path="/funding"
                   element={
@@ -96,6 +97,31 @@ function App() {
                       exit={{ opacity: 0 }}
                     >
                       <HealthFunds />
+                    </motion.div>
+                  }
+                />
+                <Route
+                  path="/grievance"
+                  element={
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <RaiseYourVoice />
+                    </motion.div>
+                  }
+                />
+                {/* New route for Telemedicine */}
+                <Route
+                  path="/telemedicine"
+                  element={
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <Telemedicine />
                     </motion.div>
                   }
                 />

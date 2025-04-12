@@ -87,3 +87,7 @@ export default function SymptomChecker() {
     </div>
   );
 }
+
+<a href="/telemedicine" className={styles.emergencyButton}>
+  <Icon icon="mdi:video" /> Connect to Telemedicine
+</a>

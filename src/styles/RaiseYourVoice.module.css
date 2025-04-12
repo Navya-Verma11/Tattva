@@ -1,0 +1,199 @@
+/* src/styles/RaiseYourVoice.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .chatContainer {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .chatTimeline {
+    border-left: 3px solid #e2e8f0;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .message {
+    background: #f7fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    position: relative;
+    max-width: 80%;
+  }
+  
+  .message.system {
+    background: #ebf8ff;
+    border: 1px solid #bee3f8;
+  }
+  
+  .message.user {
+    margin-left: auto;
+    background: #f0fdfa;
+    border: 1px solid #38b2ac;
+  }
+  
+  .message svg {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    font-size: 1.5rem;
+    color: #38b2ac;
+  }
+  
+  .formStep {
+    padding: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  select, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .supportToggle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .toggleOption {
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .toggleOption.active {
+    border-color: #38b2ac;
+    background: #f0fdfa;
+  }
+  
+  .paidFeatures {
+    margin: 2rem 0;
+  }
+  
+  .featureCard {
+    background: #fffaf0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #f6ad55;
+  }
+  
+  .featureCard ul {
+    margin: 1rem 0 0 1.5rem;
+    padding: 0;
+  }
+  
+  .formActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .submitButton {
+    background: #38b2ac;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .backButton {
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+  }
+  
+  .successMessage {
+    text-align: center;
+    padding: 2rem;
+    background: #f0fdfa;
+    border-radius: 12px;
+    border: 2px solid #38b2ac;
+  }
+  
+  .successIcon {
+    font-size: 3rem;
+    color: #38b2ac;
+    margin-bottom: 1rem;
+  }
+  
+  .loadingBar {
+    height: 4px;
+    background: #e2e8f0;
+    border-radius: 2px;
+    margin: 1rem auto;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .loadingBar::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #38b2ac;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  
+  .legalTips {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .legalTips svg {
+    font-size: 2rem;
+    color: #38b2ac;
+    flex-shrink: 0;
+  }
